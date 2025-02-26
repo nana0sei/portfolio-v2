@@ -8,9 +8,9 @@ const HomePage = () => {
       <div className="flex flex-col justify-center items-center space-y-1 text-center">
         {/* title */}
         <div className="text-4xl font-bold">
-          hi, my name is <span className="italic text-yellow-300">nana.</span>{" "}
-          i'm a <span className="italic text-blue-300">software engineer</span>{" "}
-          and a <span className="italic text-blue-300">digital artist.</span>
+          hi, my name is <span className="italic text-yellow-400">nana.</span>{" "}
+          i'm a <span className="italic text-blue-400">software engineer</span>{" "}
+          and a <span className="italic text-blue-400">digital artist.</span>
         </div>
 
         {/* subtitle */}
