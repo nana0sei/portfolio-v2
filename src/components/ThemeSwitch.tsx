@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const ColorModeSwitch = () => {
+const ThemeSwitch = () => {
   const localTheme = localStorage.getItem("portfolio-theme") || "light";
   const [theme, setTheme] = useState(localTheme);
 
@@ -21,4 +21,4 @@ const ColorModeSwitch = () => {
   );
 };
 
-export default ColorModeSwitch;
+export default ThemeSwitch;

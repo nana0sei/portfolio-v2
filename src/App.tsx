@@ -1,10 +1,12 @@
-import ColorModeSwitch from "./components/ColorModeSwitch";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
-      <div className="flex h-screen items-center justify-center">
-        <ColorModeSwitch />
+      <div>
+        <Navbar />
+
+        <p>hi, my name is nana</p>
       </div>
     </>
   );
