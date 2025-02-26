@@ -23,7 +23,11 @@ const HomePage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           {links.map((link) => (
             <Link to={link.href} key={link.href}>
-              <img src={link.icon} alt="link icon" />
+              <img
+                src={link.icon}
+                alt="link icon"
+                className="w-2xl hover:scale-90 transition-transform"
+              />
             </Link>
           ))}
         </div>
