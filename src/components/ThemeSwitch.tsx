@@ -13,7 +13,7 @@ const ThemeSwitch = () => {
     <>
       <input
         type="checkbox"
-        className="toggle"
+        className="toggle bg-blue-300"
         checked={theme === "light"}
         onChange={() => setTheme(theme === "dark" ? "light" : "dark")}
       />
