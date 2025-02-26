@@ -1,4 +1,4 @@
-function App() {
+const HomePage = () => {
   return (
     <>
       <div className="flex justify-center">
@@ -6,6 +6,6 @@ function App() {
       </div>
     </>
   );
-}
+};
 
-export default App;
+export default HomePage;
