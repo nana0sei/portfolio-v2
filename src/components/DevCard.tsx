@@ -11,7 +11,11 @@ interface Props {
 const DevCard = ({ project }: Props) => {
   return (
     <>
-      <Link to={project.link} target="_blank" rel="noopener noreferrer">
+      <Link
+        to={project.link}
+        target="_blank"
+        className="hover:scale-95 transition-transform"
+      >
         <div className="card bg-base-100 shadow-xl">
           <figure>
             <img src={project.image || placeholder} alt={project.name} />
