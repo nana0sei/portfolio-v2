@@ -26,7 +26,7 @@ const HomePage = () => {
               <img
                 src={link.icon}
                 alt="link icon"
-                className="w-2xl hover:scale-90 transition-transform"
+                className="w-[600px] hover:scale-90 transition-transform"
               />
             </Link>
           ))}
