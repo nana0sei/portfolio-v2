@@ -7,11 +7,11 @@ const ArtPage = () => {
     <>
       <div className="h-screen space-y-2">
         <div className="flex justify-center">
-          <img src={art} width="400px" />
+          <img src={art} width="350px" />
         </div>
 
         {/* content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           {photos.map((artwork) => (
             <ArtCard art={artwork} key={artwork.description} />
           ))}
