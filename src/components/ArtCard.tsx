@@ -8,7 +8,7 @@ interface Props {
 const ArtCard = ({ art }: Props) => {
   const { image } = useCloudinary(art.url);
   return (
-    <div className="rounded-lg dark:bg-white">
+    <div className="rounded-lg dark:bg-white overflow-clip">
       <AdvancedImage cldImg={image} />
     </div>
   );
