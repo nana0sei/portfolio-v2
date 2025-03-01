@@ -14,7 +14,7 @@ const Navbar = () => {
   }, [theme]);
 
   return (
-    <div className="flex justify-between items-center sticky top-0 p-3 mb-5 bg-base-100">
+    <div className="flex justify-between items-center sticky top-0 p-3 mb-5 bg-base-100 z-10">
       <Link to="/">
         <img
           src={theme === "light" ? logoB : logoW}
