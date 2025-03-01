@@ -20,7 +20,7 @@ const HomePage = () => {
         </p>
 
         {/* links */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pb-32">
           {links.map((link) => (
             <Link to={link.href} key={link.href}>
               <img
