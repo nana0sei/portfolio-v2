@@ -19,7 +19,7 @@ const Navbar = () => {
         <img
           src={theme === "light" ? logoB : logoW}
           alt="nana icon"
-          className="w-12"
+          width="48px"
         />
       </Link>
       {/* theme switch */}
