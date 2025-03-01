@@ -1,4 +1,4 @@
 export interface Artwork {
-  image: string;
+  url: string;
   description: string;
 }

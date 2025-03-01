@@ -1,16 +1,15 @@
 import { Artwork } from "../entities/Artwork";
+import { AdvancedImage } from "@cloudinary/react";
+import useCloudinary from "../lib/useCloudinary";
 
 interface Props {
   art: Artwork;
 }
 const ArtCard = ({ art }: Props) => {
+  const { image } = useCloudinary(art.url);
   return (
-    <div>
-      <img
-        src={art.image}
-        alt={art.description}
-        className="rounded-lg dark:bg-white"
-      />
+    <div className="rounded-lg dark:bg-white">
+      <AdvancedImage cldImg={image} />
     </div>
   );
 };

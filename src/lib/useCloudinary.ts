@@ -9,7 +9,7 @@ const useCloudinary = (imageUrl: string) => {
   });
 
   const image = cld.image(imageUrl);
-  image.resize(fill().width(250).height(250));
+  image.resize(fill());
 
   return { image };
 };

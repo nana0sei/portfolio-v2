@@ -1,48 +1,38 @@
-import stolen from "../assets/art/stolen.png";
-import leomie from "../assets/art/leomie.png";
-import tyler from "../assets/art/tyler.png";
-import ginuwine from "../assets/art/ginuwine.png";
-import anok from "../assets/art/anok.png";
-import janfeb from "../assets/art/janfeb.png";
-import deto from "../assets/art/deto.png";
-import pharrell from "../assets/art/pharrell.png";
-import rema from "../assets/art/rema.png";
-
 const photos = [
   {
-    image: leomie,
+    url: "portfolio/lq50f8h4yucbh6iw1lov",
     description: "leomie anderson",
   },
   {
-    image: janfeb,
+    url: "portfolio/od3ddhqdvpuhhayolxzk",
     description: "janfeb",
   },
   {
-    image: stolen,
+    url: "portfolio/taqedaokc1diq0nkw10t",
     description: "stolen arts jacket",
   },
   {
-    image: tyler,
+    url: "portfolio/ubpx9u2xgzsoauxgpx34",
     description: "chromakopia",
   },
   {
-    image: ginuwine,
+    url: "portfolio/ceyao4xujsgt5hcukttn",
     description: "ginuwine",
   },
   {
-    image: anok,
+    url: "portfolio/bqwb4vmn1rjcxtcdjxmp",
     description: "anok yai",
   },
   {
-    image: rema,
+    url: "portfolio/hzkvzbekbq5kq7uubnfj",
     description: "rema",
   },
   {
-    image: pharrell,
+    url: "portfolio/irjkiipmy5wyvoicz7ub",
     description: "pharrell",
   },
   {
-    image: deto,
+    url: "portfolio/unoxkjmqhngvhco4kedo",
     description: "deto",
   },
 ];
