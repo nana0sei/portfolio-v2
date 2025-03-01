@@ -12,12 +12,7 @@ const Footer = () => {
         <div className="divider">© {year} Nana Osei</div>
         <div className="flex items-center justify-center gap-2">
           {links.map((link) => (
-            <Link
-              to={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              key={link.href}
-            >
+            <Link to={link.href} target="_blank" key={link.href}>
               {link.icon}
             </Link>
           ))}

@@ -1,5 +1,9 @@
 const DevPage = () => {
-  return <div>DevPage</div>;
+  return (
+    <>
+      <div className="h-screen">DevPage</div>
+    </>
+  );
 };
 
 export default DevPage;
