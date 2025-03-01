@@ -6,7 +6,7 @@ interface Props {
 const ArtCard = ({ art }: Props) => {
   return (
     <div>
-      <img src={art.image} alt={art.description} />
+      <img src={art.image} alt={art.description} className="rounded-lg" />
     </div>
   );
 };
