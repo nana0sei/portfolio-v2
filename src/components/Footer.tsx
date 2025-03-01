@@ -8,11 +8,16 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="flex flex-col items-center w-full p-2 sticky bottom-0  bg-base-100 z-10">
+      <footer className="flex flex-col items-center w-full p-2 fixed bottom-0  bg-base-100 z-10 mt-5">
         <div className="divider">© {year} Nana Osei</div>
         <div className="flex items-center justify-center gap-2">
           {links.map((link) => (
-            <Link to={link.href} target="_blank" key={link.href}>
+            <Link
+              to={link.href}
+              target="_blank"
+              key={link.href}
+              className="hover:text-blue-500 transition-colors"
+            >
               {link.icon}
             </Link>
           ))}
