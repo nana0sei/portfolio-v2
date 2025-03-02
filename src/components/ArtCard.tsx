@@ -22,7 +22,6 @@ const ArtCard = ({ art }: Props) => {
       <dialog id={`modal-${art.url}`} className="modal">
         <div className="modal-box space-y-1 p-2 dark:bg-white dark:text-black">
           <AdvancedImage cldImg={image} />
-          <p className="text-center italic">{art.description}</p>
         </div>
         <form method="dialog" className="modal-backdrop">
           <button>close</button>
