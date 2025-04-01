@@ -3,7 +3,7 @@ import square from "../assets/square.jpg";
 const RecentlyPlayedCard = () => {
   return (
     <>
-      <div className="dropdown dropdown-end">
+      <div className="dropdown dropdown-center">
         <div
           tabIndex={0}
           role="button"
@@ -14,22 +14,24 @@ const RecentlyPlayedCard = () => {
         </div>
         <div
           tabIndex={0}
-          className="dropdown-content card card-compact bg-white z-[1] w-fit h-fit p-2 shadow-md"
+          className="dropdown-content card bg-base-200 z-[1] min-w-64 p-2 shadow-md space-y-1"
         >
-          <div className="card-body">
-            <div className="flex gap-2 h-full justify-center items-center">
-              {/* image */}
-              <img
-                src={square}
-                alt="nana icon"
-                width="100px"
-                className="rounded-lg  overflow-clip cursor-pointer w-[100px]"
-              />{" "}
-              {/* details */}
-              <div>
-                <p className="font-semibold">Song Title</p>
-                <p>Artist Name</p>
-              </div>
+          <div className="flex gap-2 h-full items-center">
+            {/* image */}
+            <img
+              src={square}
+              alt="nana icon"
+              width="100px"
+              className="rounded-lg  overflow-clip"
+            />{" "}
+            {/* details */}
+            <div>
+              <p className="text-center text-sm font-semibold">
+                recently played
+              </p>
+
+              <p className="font-semibold">Song Title</p>
+              <p className="text-sm">Artist Name</p>
             </div>
           </div>
         </div>
