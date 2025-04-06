@@ -1,6 +1,10 @@
 import square from "../assets/square.jpg";
+import useRecentlyPlayed from "../lib/useRecentlyPlayed";
 
 const RecentlyPlayedCard = () => {
+  const { data } = useRecentlyPlayed();
+
+  console.log("Recently Played", data);
   return (
     <>
       <div className="dropdown dropdown-center">
