@@ -69,7 +69,7 @@ class APIClient<T> {
     if (
       !access_token ||
       !expiry_date ||
-      new Date().getTime() <= new Date(expiry_date).getTime()
+      new Date().getTime() >= new Date(expiry_date).getTime()
     ) {
       const refreshed = (await refreshAccessToken()) as {
         access_token: string;
