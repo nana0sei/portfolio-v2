@@ -34,7 +34,7 @@ const refreshAccessToken = () => {
       localStorage.setItem("access_token", res.data.access_token);
       localStorage.setItem(
         "expiry_date",
-        add(new Date(), { seconds: res.data.expires_in }).toDateString()
+        add(new Date(), { seconds: res.data.expires_in }).toISOString()
       );
 
       return {
@@ -69,7 +69,7 @@ class APIClient<T> {
     if (
       !access_token ||
       !expiry_date ||
-      new Date().getTime() >= new Date(expiry_date).getTime()
+      new Date().toISOString() >= expiry_date
     ) {
       const refreshed = (await refreshAccessToken()) as {
         access_token: string;
