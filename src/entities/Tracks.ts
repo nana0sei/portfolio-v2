@@ -31,7 +31,9 @@ interface SimplifiedTrackObject {
     explicit: boolean;
     duration_ms: number;
     album: Album;
-    preview_url: string;
+    external_urls: {
+      spotify: string;
+    };
   };
 }
 

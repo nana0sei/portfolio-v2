@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import useRecentlyPlayed from "../hooks/useRecentlyPlayed";
 
 const RecentlyPlayedCard = () => {
@@ -38,11 +39,18 @@ const RecentlyPlayedCard = () => {
             />{" "}
             {/* details */}
             <div>
-              <p className="text-center text-sm font-semibold">
-                recently played
-              </p>
+              <p className="text-sm font-semibold">recently played</p>
 
-              <p className="font-semibold">{tracks?.items[0].track.name}</p>
+              <Link
+                to={tracks?.items[0].track.external_urls.spotify!}
+                target="_blank"
+              >
+                <p className="font-semibold text-blue-400 hover:underline">
+                  {tracks && tracks?.items[0].track.name.length > 20
+                    ? `${tracks?.items[0].track.name.slice(0, 15)}...`
+                    : tracks?.items[0].track.name}
+                </p>
+              </Link>
 
               {/* artists */}
               {artists && artists.length > 20 ? (
