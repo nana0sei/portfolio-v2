@@ -1,5 +1,9 @@
 const photos = [
   {
+    url: "portfolio/IMG_4086_oxcorz",
+    description: "white fit woman",
+  },
+  {
     url: "portfolio/lq50f8h4yucbh6iw1lov",
     description: "leomie anderson",
   },
