@@ -10,7 +10,7 @@ const ArtCard = ({ art }: Props) => {
   return (
     <>
       <div
-        className="rounded-lg dark:bg-white hover:scale-95 transition-transform overflow-clip cursor-pointer"
+        className="rounded-lg bg-white hover:scale-95 transition-transform overflow-clip cursor-pointer"
         onClick={() => {
           //@ts-expect-error: issue with daisy ui. works anyway
           document.getElementById(`modal-${art.url}`)!.showModal();
@@ -20,7 +20,7 @@ const ArtCard = ({ art }: Props) => {
       </div>{" "}
       {/* dialog */}
       <dialog id={`modal-${art.url}`} className="modal">
-        <div className="modal-box space-y-1 p-2 dark:bg-white dark:text-black">
+        <div className="modal-box space-y-1 p-2 bg-white dark:text-black">
           <AdvancedImage cldImg={image} />
         </div>
         <form method="dialog" className="modal-backdrop">
