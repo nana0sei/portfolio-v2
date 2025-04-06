@@ -55,11 +55,6 @@ const photos = [
     url: "portfolio/bqwb4vmn1rjcxtcdjxmp",
     description: "anok yai",
   },
-
-  {
-    url: "portfolio/mazwhvkviixug3glwvx0",
-    description: "",
-  },
 ];
 
 export default photos;
