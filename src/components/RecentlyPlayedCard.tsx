@@ -1,10 +1,14 @@
-import square from "../assets/square.jpg";
 import useRecentlyPlayed from "../hooks/useRecentlyPlayed";
 
 const RecentlyPlayedCard = () => {
-  const { data } = useRecentlyPlayed();
+  const { data: tracks, isLoading, error } = useRecentlyPlayed();
 
-  console.log("Recently Played", data);
+  if (isLoading) return <div className="skeleton w-[48px] h-[48px]"></div>;
+
+  if (error) return null;
+
+  const artists = tracks?.items[0].track.artists.map((a) => a.name).join(", ");
+
   return (
     <>
       <div className="dropdown dropdown-center">
@@ -14,16 +18,20 @@ const RecentlyPlayedCard = () => {
           className="rounded-lg hover:scale-95 transition-transform overflow-clip cursor-pointer"
         >
           {/* image */}
-          <img src={square} alt="nana icon" width="48px" />{" "}
+          <img
+            src={tracks?.items[0].track.album.images[0].url}
+            alt="nana icon"
+            width="48px"
+          />{" "}
         </div>
         <div
           tabIndex={0}
-          className="dropdown-content card bg-base-200 z-[1] min-w-64 p-2 shadow-md space-y-1"
+          className="flex dropdown-content card bg-base-200 z-[1] min-w-64 p-2 shadow-md space-y-1"
         >
           <div className="flex gap-2 h-full items-center">
             {/* image */}
             <img
-              src={square}
+              src={tracks?.items[0].track.album.images[0].url}
               alt="nana icon"
               width="100px"
               className="rounded-lg  overflow-clip"
@@ -34,8 +42,8 @@ const RecentlyPlayedCard = () => {
                 recently played
               </p>
 
-              <p className="font-semibold">Song Title</p>
-              <p className="text-sm">Artist Name</p>
+              <p className="font-semibold">{tracks?.items[0].track.name}</p>
+              <p className="text-sm">{artists}</p>
             </div>
           </div>
         </div>

@@ -23,14 +23,16 @@ interface Album {
 }
 
 interface SimplifiedTrackObject {
-  id: string;
-  artists: SimplifiedArtistObject[];
-  name: string;
-  track_number: number;
-  explicit: boolean;
-  duration_ms: number;
-  album: Album;
-  preview_url: string;
+  track: {
+    id: string;
+    artists: SimplifiedArtistObject[];
+    name: string;
+    track_number: number;
+    explicit: boolean;
+    duration_ms: number;
+    album: Album;
+    preview_url: string;
+  };
 }
 
 interface Tracks {

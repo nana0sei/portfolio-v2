@@ -83,7 +83,7 @@ class APIClient<T> {
           Authorization: "Bearer " + access_token,
         },
         params: {
-          limit: 10,
+          limit: 1,
           before: new Date().getTime(),
         },
       })
