@@ -1,5 +1,5 @@
 import square from "../assets/square.jpg";
-import useRecentlyPlayed from "../lib/useRecentlyPlayed";
+import useRecentlyPlayed from "../hooks/useRecentlyPlayed";
 
 const RecentlyPlayedCard = () => {
   const { data } = useRecentlyPlayed();
