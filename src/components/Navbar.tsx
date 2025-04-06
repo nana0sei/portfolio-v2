@@ -3,6 +3,7 @@ import { BsFillMoonFill, BsSun } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import logoB from "../assets/logoB.png";
 import logoW from "../assets/logoW.png";
+import RecentlyPlayedCard from "./RecentlyPlayedCard";
 
 const Navbar = () => {
   const localTheme = localStorage.getItem("portfolio-theme") || "light";
@@ -22,6 +23,8 @@ const Navbar = () => {
           width="48px"
         />
       </Link>
+      {/* recently played */}
+      <RecentlyPlayedCard />
       {/* theme switch */}
       <div className="flex items-center gap-1">
         <input

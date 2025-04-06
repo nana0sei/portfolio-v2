@@ -1,6 +1,6 @@
 import { Artwork } from "../entities/Artwork";
 import { AdvancedImage } from "@cloudinary/react";
-import useCloudinary from "../lib/useCloudinary";
+import useCloudinary from "../hooks/useCloudinary";
 
 interface Props {
   art: Artwork;
