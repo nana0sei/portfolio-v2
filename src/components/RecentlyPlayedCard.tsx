@@ -43,7 +43,15 @@ const RecentlyPlayedCard = () => {
               </p>
 
               <p className="font-semibold">{tracks?.items[0].track.name}</p>
-              <p className="text-sm">{artists}</p>
+
+              {/* artists */}
+              {artists && artists.length > 20 ? (
+                <div className="marquee-wrapper">
+                  <p className="text-sm marquee">{artists}</p>
+                </div>
+              ) : (
+                <p className="text-sm">{artists}</p>
+              )}
             </div>
           </div>
         </div>
