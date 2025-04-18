@@ -1,6 +1,6 @@
+import art from "../assets/arttitle.png";
 import ArtCard from "../components/ArtCard";
 import photos from "../data/photos";
-import art from "../assets/arttitle.png";
 
 const ArtPage = () => {
   return (
