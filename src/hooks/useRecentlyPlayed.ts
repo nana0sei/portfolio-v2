@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import APIClient from "../services/api-client";
+import APIClient from "../services/spotify-client";
 import Tracks from "../entities/Tracks";
 
 const apiClient = new APIClient<Tracks>("");
