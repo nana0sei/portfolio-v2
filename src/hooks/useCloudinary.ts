@@ -21,8 +21,7 @@ export default useCloudinary;
 
 const getImageList = async () => {
   const url = `https://res.cloudinary.com/${cloudName}/image/list/tie.json`;
-  const { data } = await axios.get(url);
-  return data;
+  return await axios.get(url).then((res) => res.data);
 };
 
 export const useImages = () =>
