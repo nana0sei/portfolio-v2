@@ -7,7 +7,7 @@ const ArtPage = () => {
     <>
       <div className="h-screen space-y-2">
         <div className="flex justify-center">
-          <img src={art} className="w-[150px] md:w-[350px]" />
+          <img src={art} className="w-[150px] md:w-[350px]" alt="my art" />
         </div>
 
         {/* content */}

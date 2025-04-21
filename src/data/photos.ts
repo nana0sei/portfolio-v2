@@ -8,7 +8,7 @@ const photos = [
     description: "white fit woman",
   },
   {
-    url: "portfolio/lq50f8h4yucbh6iw1lov",
+    url: "portfolio/IMG_4027_t5iv7s",
     description: "leomie anderson",
   },
   {
