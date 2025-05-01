@@ -1,5 +1,6 @@
 import art from "../assets/arttitle.png";
-import ArtCard from "../components/ArtCard";
+import { lazy, Suspense } from "react";
+const ArtCard = lazy(() => import("../components/ArtCard"));
 import photos from "../data/photos";
 
 const ArtPage = () => {
@@ -14,7 +15,9 @@ const ArtPage = () => {
         <div className="columns-2 lg:columns-3 gap-2 pb-32">
           {photos.map((artwork, index) => (
             <div key={index} className="mb-2 break-inside-avoid rounded-lg ">
-              <ArtCard art={artwork} key={artwork.description} />
+              <Suspense fallback={<div className="skeleton h-72 w-full" />}>
+                <ArtCard art={artwork} key={artwork.description} />
+              </Suspense>
             </div>
           ))}
         </div>
