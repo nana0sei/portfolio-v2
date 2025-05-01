@@ -15,9 +15,7 @@ const ArtPage = () => {
         <div className="columns-2 lg:columns-3 gap-2 pb-32">
           {photos.map((artwork, index) => (
             <div key={index} className="mb-2 break-inside-avoid rounded-lg ">
-              <Suspense
-                fallback={<div className="skeleton h-[500px] w-full" />}
-              >
+              <Suspense fallback={<div className="skeleton h-72 w-full" />}>
                 <ArtCard art={artwork} key={artwork.description} />
               </Suspense>
             </div>
