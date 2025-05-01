@@ -1,9 +1,5 @@
 const photos = [
   {
-    url: "portfolio/IMG_4104_kiocka",
-    description: "mark s",
-  },
-  {
     url: "portfolio/IMG_4086_oxcorz",
     description: "white fit woman",
   },
