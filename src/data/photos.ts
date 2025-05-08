@@ -1,5 +1,13 @@
 const photos = [
   {
+    url: "portfolio/goodcredit_vpyjzf",
+    description: "good credit",
+  },
+  {
+    url: "portfolio/ayra_zbvgr2",
+    description: "ayra starr",
+  },
+  {
     url: "portfolio/IMG_4086_oxcorz",
     description: "white fit woman",
   },
