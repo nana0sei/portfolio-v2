@@ -2,21 +2,13 @@ import portfolio from "../assets/portfolio.png";
 import { Project } from "../entities/Project";
 
 const projects: Project[] = [
-  // {
-  //   name: "spotify lite",
-  //   description: "search, browse featured playlists and play previews.",
-  //   image: spotify,
-  //   link: "https://spotify-lite.vercel.app/",
-  //   git: "https://github.com/nana0sei/spotify-lite",
-  //   tools: "react, typescript, spotify api, chakra ui",
-  // },
-
   {
     name: "portfolio",
-    description: "the website you're currently on.",
+    description:
+      "here. the image in the middle shows the songs i've been listening to",
     image: portfolio,
     link: "https://nana-osei.vercel.app/",
-    git: "https://github.com/nana0sei/portfolio",
+    git: "https://github.com/nana0sei/portfolio-v2",
     tools: "react, typescript, tailwind, cloudinary",
   },
 
