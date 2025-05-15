@@ -6,7 +6,7 @@ import logoW from "../assets/logoW.png";
 import RecentlyPlayedCard from "./RecentlyPlayedCard";
 
 const Navbar = () => {
-  const localTheme = localStorage.getItem("portfolio-theme") || "dark";
+  const localTheme = localStorage.getItem("portfolio-theme") || "light";
   const [theme, setTheme] = useState(localTheme);
 
   useEffect(() => {
