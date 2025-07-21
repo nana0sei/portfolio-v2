@@ -12,7 +12,7 @@ const ArtPage = () => {
         </div>
 
         {/* content */}
-        <div className="columns-2 lg:columns-3 gap-2 pb-32">
+        <div className="columns-3 gap-2 pb-32">
           {photos.map((artwork, index) => (
             <div key={index} className="mb-2 break-inside-avoid rounded-lg ">
               <Suspense fallback={<div className="skeleton h-72 w-full" />}>
