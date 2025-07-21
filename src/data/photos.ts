@@ -1,7 +1,11 @@
 const photos = [
   {
+    url: "portfolio/IMG_6041_sacfzn",
+    description: "damson idris",
+  },
+  {
     url: "portfolio/obongjayar_jmfwa6",
-    description: "good credit",
+    description: "ob",
   },
   {
     url: "portfolio/goodcredit_vpyjzf",

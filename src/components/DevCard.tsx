@@ -16,7 +16,7 @@ const DevCard = ({ project }: Props) => {
         target="_blank"
         className="hover:scale-95 transition-transform"
       >
-        <div className="card bg-base-100 shadow-xl">
+        <div className="card bg-base-100 shadow-xl h-full">
           <figure>
             <img src={project.image || placeholder} alt={project.name} />
           </figure>
