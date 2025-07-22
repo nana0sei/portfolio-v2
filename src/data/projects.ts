@@ -1,5 +1,4 @@
 import portfolio from "../assets/portfolio.png";
-import spotify from "../assets/spotify.png";
 import fhq from "../assets/fhq.png";
 
 import { Project } from "../entities/Project";
@@ -24,14 +23,14 @@ const projects: Project[] = [
     tools: "react, typescript, tailwind",
   },
 
-  {
-    name: "spotify lite",
-    description: "search, view new releases. will rebuild soon",
-    image: spotify,
-    link: "https://spotify-lite.vercel.app/",
-    git: "https://github.com/nana0sei/spotify-lite",
-    tools: "react, typescript, spotify api",
-  },
+  // {
+  //   name: "spotify lite",
+  //   description: "search, view new releases. will rebuild soon",
+  //   image: spotify,
+  //   link: "https://spotify-lite.vercel.app/",
+  //   git: "https://github.com/nana0sei/spotify-lite",
+  //   tools: "react, typescript, spotify api",
+  // },
 
   {
     name: "vidly",
