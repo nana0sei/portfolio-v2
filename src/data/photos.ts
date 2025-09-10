@@ -1,5 +1,9 @@
 const photos = [
   {
+    url: "portfolio/IMG_4283_nztjuc",
+    description: "rema 2",
+  },
+  {
     url: "portfolio/IMG_6041_sacfzn",
     description: "damson idris",
   },
@@ -33,8 +37,13 @@ const photos = [
   },
 
   {
-    url: "portfolio/nhycf7kpkwrgenzqkvwt",
-    description: "tems",
+    url: "portfolio/solis_faces-01_jclizw",
+    description: "solis sheet",
+  },
+
+  {
+    url: "portfolio/IMG_3622_ojx340",
+    description: "ghost town titles",
   },
   {
     url: "portfolio/taqedaokc1diq0nkw10t",
@@ -47,30 +56,27 @@ const photos = [
   },
 
   {
+    url: "portfolio/hzkvzbekbq5kq7uubnfj",
+    description: "rema",
+  },
+
+  {
     url: "portfolio/ceyao4xujsgt5hcukttn",
     description: "ginuwine",
   },
 
   {
-    url: "portfolio/hzkvzbekbq5kq7uubnfj",
-    description: "rema",
+    url: "portfolio/bqwb4vmn1rjcxtcdjxmp",
+    description: "anok yai",
   },
-  {
-    url: "portfolio/solis_faces-01_jclizw",
-    description: "solis sheet",
-  },
-
-  {
-    url: "portfolio/IMG_3622_ojx340",
-    description: "ghost town titles",
-  },
-  // {
-  //   url: "portfolio/bqwb4vmn1rjcxtcdjxmp",
-  //   description: "anok yai",
-  // },
   {
     url: "portfolio/unoxkjmqhngvhco4kedo",
     description: "deto black",
+  },
+
+  {
+    url: "portfolio/nhycf7kpkwrgenzqkvwt",
+    description: "tems",
   },
 
   {
