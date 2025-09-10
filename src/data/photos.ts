@@ -1,5 +1,9 @@
 const photos = [
   {
+    url: "portfolio/IMG_4283_nztjuc",
+    description: "rema 2",
+  },
+  {
     url: "portfolio/IMG_6041_sacfzn",
     description: "damson idris",
   },
@@ -64,10 +68,10 @@ const photos = [
     url: "portfolio/IMG_3622_ojx340",
     description: "ghost town titles",
   },
-  // {
-  //   url: "portfolio/bqwb4vmn1rjcxtcdjxmp",
-  //   description: "anok yai",
-  // },
+  {
+    url: "portfolio/bqwb4vmn1rjcxtcdjxmp",
+    description: "anok yai",
+  },
   {
     url: "portfolio/unoxkjmqhngvhco4kedo",
     description: "deto black",
