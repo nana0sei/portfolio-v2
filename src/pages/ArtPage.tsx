@@ -2,14 +2,15 @@ import { lazy, Suspense } from "react";
 import photos from "../data/photos";
 const ArtCard = lazy(() => import("../components/ArtCard"));
 import Masonry from "react-masonry-css";
+import art from "../assets/arttitle.png";
 
 const ArtPage = () => {
   return (
     <>
       <div className="h-screen space-y-2">
-        {/* <div className="flex justify-center">
+        <div className="flex justify-center">
           <img src={art} className="w-[150px] md:w-[350px]" alt="my art" />
-        </div> */}
+        </div>
 
         {/* content */}
         <Masonry
