@@ -65,10 +65,10 @@ const photos = [
     description: "ginuwine",
   },
 
-  {
-    url: "portfolio/bqwb4vmn1rjcxtcdjxmp",
-    description: "anok yai",
-  },
+  // {
+  //   url: "portfolio/bqwb4vmn1rjcxtcdjxmp",
+  //   description: "anok yai",
+  // },
   {
     url: "portfolio/unoxkjmqhngvhco4kedo",
     description: "deto black",
