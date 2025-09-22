@@ -9,7 +9,7 @@ const projects: Project[] = [
     description:
       "a church management web app for member communication, bookkeeping and other related functions",
     image: fhq,
-    link: "https://thefaithhq.com",
+    link: "https://www.logicielghana.com/platorms/platforms/fathhq",
     git: "",
     tools: "nextjs, tailwind",
   },
