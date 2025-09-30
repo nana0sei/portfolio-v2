@@ -18,7 +18,7 @@ const projects: Project[] = [
     description:
       "here. the image in the middle shows the songs i've been listening to",
     image: portfolio,
-    link: "https://nana-osei.vercel.app/",
+    link: "https://www.nanaosei.xyz",
     git: "https://github.com/nana0sei/portfolio-v2",
     tools: "react, typescript, tailwind",
   },
@@ -34,7 +34,7 @@ const projects: Project[] = [
 
   {
     name: "vidly",
-    description: "rest api and tests for a movie rental service.",
+    description: "rest api and tests for a fictional movie rental service.",
     image: "",
     link: "",
     git: "https://github.com/nana0sei/vidly",
