@@ -6,8 +6,7 @@ import { Project } from "../entities/Project";
 const projects: Project[] = [
   {
     name: "faith hq",
-    description:
-      "a church management web app for member communication, bookkeeping and other related functions",
+    description: "a church management web app",
     image: fhq,
     link: "https://www.logicielghana.com/platorms/platforms/fathhq",
     git: "",
