@@ -6,8 +6,7 @@ import { Project } from "../entities/Project";
 const projects: Project[] = [
   {
     name: "faith hq",
-    description:
-      "a church management web app for member communication, bookkeeping and other related functions",
+    description: "a church management solution",
     image: fhq,
     link: "https://www.logicielghana.com/platorms/platforms/fathhq",
     git: "",
@@ -18,7 +17,7 @@ const projects: Project[] = [
     description:
       "here. the image in the middle shows the songs i've been listening to",
     image: portfolio,
-    link: "https://nana-osei.vercel.app/",
+    link: "https://www.nanaosei.xyz",
     git: "https://github.com/nana0sei/portfolio-v2",
     tools: "react, typescript, tailwind",
   },
@@ -34,7 +33,7 @@ const projects: Project[] = [
 
   {
     name: "vidly",
-    description: "rest api and tests for a movie rental service.",
+    description: "rest api and tests for a fictional movie rental service.",
     image: "",
     link: "",
     git: "https://github.com/nana0sei/vidly",
