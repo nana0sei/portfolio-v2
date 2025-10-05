@@ -13,13 +13,6 @@ const HomePage = () => {
           and a <span className="italic text-blue-400">digital artist.</span>
         </div>
 
-        {/* subtitle */}
-        <p>
-          click on any of the categories below to check out my work in each
-          field!
-        </p>
-
-        {/* links */}
         <div className="grid grid-cols-2 gap-2 pb-32">
           {links.map((link) => (
             <Link to={link.href} key={link.href}>
