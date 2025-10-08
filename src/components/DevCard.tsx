@@ -46,10 +46,6 @@ const DevCard = ({ project }: Props) => {
               </div>
             </h2>
             <p className="italic">{project.description}</p>
-            <div>
-              <span className="font-semibold">tools: </span>
-              {project.tools}
-            </div>
           </div>
         </div>
       </Link>
