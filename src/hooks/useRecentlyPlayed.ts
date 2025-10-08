@@ -83,6 +83,7 @@ const useRecentlyPlayed = () =>
   useQuery({
     queryKey: ["recently-played"],
     queryFn: () => getRecentlyPlayed(),
+    staleTime: 1000 * 1 * 30,
   });
 
 export default useRecentlyPlayed;
