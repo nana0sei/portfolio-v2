@@ -6,30 +6,21 @@ import { Project } from "../entities/Project";
 const projects: Project[] = [
   {
     name: "faith hq",
-    description: "a church management solution",
+    description:
+      "a comprehensive church management solution built for modern religious institutions. designed to simplify administration and enhance community connection, faith hq empowers churches to operate efficiently, grow sustainably, and deepen their impact.",
     image: fhq,
     link: "https://www.logicielghana.com/platorms/platforms/fathhq",
     git: "",
-    tools: "nextjs, tailwind",
+    tools: ["nextjs", "tailwind"],
   },
   {
     name: "portfolio",
-    description:
-      "here. the image in the middle shows the songs i've been listening to",
+    description: "here.",
     image: portfolio,
     link: "https://www.nanaosei.xyz",
-    git: "https://github.com/nana0sei/portfolio-v2",
-    tools: "react, typescript, tailwind",
+    git: "",
+    tools: ["react", "typescript", "tailwind"],
   },
-
-  // {
-  //   name: "spotify lite",
-  //   description: "search, view new releases. will rebuild soon",
-  //   image: spotify,
-  //   link: "https://spotify-lite.vercel.app/",
-  //   git: "https://github.com/nana0sei/spotify-lite",
-  //   tools: "react, typescript, spotify api",
-  // },
 
   {
     name: "vidly",
@@ -37,7 +28,7 @@ const projects: Project[] = [
     image: "",
     link: "",
     git: "https://github.com/nana0sei/vidly",
-    tools: "node.js, express, mongodb, jest",
+    tools: ["node.js", "express", "mongodb", "jest"],
   },
 ];
 
