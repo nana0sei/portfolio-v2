@@ -46,6 +46,17 @@ const DevCard = ({ project }: Props) => {
               </div>
             </h2>
             <p className="italic">{project.description}</p>
+
+            <div className="flex gap-1">
+              {project.tools.map((tool) => (
+                <span
+                  className="badge badge-soft badge-info font-semibold"
+                  key={tool}
+                >
+                  {tool}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </Link>

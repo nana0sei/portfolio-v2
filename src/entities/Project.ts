@@ -4,5 +4,5 @@ export interface Project {
   description: string;
   image: string;
   git?: string;
-  tools: string;
+  tools: string[];
 }
