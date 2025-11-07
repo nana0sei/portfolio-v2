@@ -1,6 +1,7 @@
 import portfolio from "../assets/portfolio.png";
 import fhq from "../assets/fhq.png";
 import loangrid from "../assets/loangrid.png";
+import lseza from "../assets/lseza.png";
 
 import { Project } from "../entities/Project";
 
@@ -14,6 +15,17 @@ const projects: Project[] = [
     git: "",
     tools: ["nextjs", "tailwind", "shadcn/ui"],
   },
+
+  {
+    name: "lseza license application portal",
+    description:
+      "a web app that allows users to apply for and manage special economic zone licenses in liberia.",
+    image: lseza,
+    link: "https://liberiaseza.gov.lr/",
+    git: "",
+    tools: ["nextjs", "tailwind", "hero ui"],
+  },
+
   {
     name: "faith hq",
     description:
