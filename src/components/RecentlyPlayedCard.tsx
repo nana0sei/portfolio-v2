@@ -16,7 +16,7 @@ const RecentlyPlayedCard = () => {
         <div
           tabIndex={0}
           role="button"
-          className="rounded-lg hover:scale-95 transition-transform overflow-clip cursor-pointer shadow-md p-2 min-w-52"
+          className="rounded-lg hover:scale-95 transition-transform overflow-clip cursor-pointer border p-2 min-w-52"
         >
           <div className="flex gap-2 items-center">
             <img

@@ -11,7 +11,7 @@ interface Props {
 const DevCard = ({ project }: Props) => {
   return (
     <>
-      <div className="card bg-base-100 shadow-xl h-full">
+      <div className="card bg-base-100 shadow-xl border">
         <figure>
           <img src={project.image || placeholder} alt={project.name} />
         </figure>
