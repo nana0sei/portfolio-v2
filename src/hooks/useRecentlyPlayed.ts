@@ -72,7 +72,7 @@ const getRecentlyPlayed = async (): Promise<Tracks> => {
         Authorization: "Bearer " + access_token,
       },
       params: {
-        limit: 1,
+        limit: 5,
         before: new Date().getTime(),
       },
     })
