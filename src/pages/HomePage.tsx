@@ -1,5 +1,3 @@
-import { FaReact } from "react-icons/fa";
-import { RiNextjsLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import art from "../assets/art.png";
 import dev from "../assets/dev.png";
