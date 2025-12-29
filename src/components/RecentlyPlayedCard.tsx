@@ -16,7 +16,7 @@ const RecentlyPlayedCard = () => {
         <div
           tabIndex={0}
           role="button"
-          className="rounded-lg hover:scale-95 transition-transform overflow-clip cursor-pointer border p-2 min-w-52"
+          className="rounded-lg hover:scale-95 transition-transform overflow-clip cursor-pointer shadow-md p-2 min-w-52"
         >
           <div className="flex gap-2 items-center">
             <img
@@ -54,7 +54,7 @@ const RecentlyPlayedCard = () => {
         </div>
         <div
           tabIndex={0}
-          className="flex dropdown-content card bg-base-100 z-[1] min-w-64 p-2 shadow-md space-y-2"
+          className="flex dropdown-content card bg-base-100 z-[1] min-w-64 p-2 space-y-2 border"
         >
           <p className="text-sm font-semibold">recently played</p>
 
@@ -70,18 +70,19 @@ const RecentlyPlayedCard = () => {
                 <Link to={item.track.external_urls.spotify!} target="_blank">
                   <p className="font-semibold text-blue-400 hover:underline">
                     {item.track.name.length > 20
-                      ? `${item.track.name.slice(0, 15)}...`
+                      ? `${item.track.name.slice(0, 20)}...`
                       : item.track.name}
                   </p>
                 </Link>
 
                 {item.track.artists.map((a) => a.name).join(", ").length >
                 20 ? (
-                  <div className="marquee-wrapper">
-                    <p className="text-sm marquee">
-                      {item.track.artists.map((a) => a.name).join(", ")}
-                    </p>
-                  </div>
+                  <p>
+                    {`${item.track.artists
+                      .map((a) => a.name)
+                      .join(", ")
+                      .slice(0, 15)}...`}
+                  </p>
                 ) : (
                   <p className="text-sm">
                     {item.track.artists.map((a) => a.name).join(", ")}
