@@ -10,7 +10,7 @@ const ArtCard = ({ art }: Props) => {
   return (
     <>
       <div
-        className="bg-white hover:scale-95 transition-transform overflow-clip cursor-pointer"
+        className="hover:scale-95 transition-transform overflow-clip cursor-pointer rounded-lg bg-slate-200 dark:bg-slate-100"
         onClick={() => {
           //@ts-expect-error: issue with daisy ui. works anyway
           document.getElementById(`modal-${art.url}`)!.showModal();
