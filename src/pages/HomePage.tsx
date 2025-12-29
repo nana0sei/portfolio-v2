@@ -1,8 +1,8 @@
+import { FaReact } from "react-icons/fa";
+import { RiNextjsLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import art from "../assets/art.png";
 import dev from "../assets/dev.png";
-import skillset from "../assets/skillset.png";
-import { FaReact } from "react-icons/fa";
 
 const HomePage = () => {
   return (
@@ -15,20 +15,6 @@ const HomePage = () => {
             i'm a{" "}
             <span className="italic text-blue-400">software engineer</span> and
             a <span className="italic text-blue-400">digital artist.</span>
-          </div>
-        </div>
-
-        <div className="flex flex-col justify-center items-center space-y-2">
-          <img src={skillset} className="w-[150px] md:w-[250px]" />
-          <div className="flex gap-1">
-            {skills.map((skill) => (
-              <span
-                className="badge badge-lg badge-neutral text-white font-semibold"
-                key={skill.label}
-              >
-                {skill.label} {skill.icon}
-              </span>
-            ))}
           </div>
         </div>
 
@@ -56,5 +42,3 @@ const links = [
   { href: "/dev", icon: dev },
   { href: "/art", icon: art },
 ];
-
-const skills = [{ label: "React", icon: <FaReact size={20} /> }];
