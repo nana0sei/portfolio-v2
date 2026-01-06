@@ -72,7 +72,7 @@ const getRecentlyPlayed = async (): Promise<Tracks> => {
         Authorization: "Bearer " + access_token,
       },
       params: {
-        limit: 5,
+        limit: 1,
         before: new Date().getTime(),
       },
     })
@@ -83,7 +83,6 @@ const useRecentlyPlayed = () =>
   useQuery({
     queryKey: ["recently-played"],
     queryFn: () => getRecentlyPlayed(),
-    staleTime: 1000 * 1 * 30,
   });
 
 export default useRecentlyPlayed;
