@@ -16,7 +16,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div className="grid grid-cols-2 gap-2">
           {links.map((link) => (
             <div className="flex justify-center" key={link.href}>
               <Link to={link.href}>
