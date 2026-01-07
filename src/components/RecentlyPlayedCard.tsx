@@ -12,7 +12,7 @@ const RecentlyPlayedCard = () => {
 
   return (
     <>
-      <div className="card bg-base-200 shadow-md p-2 w-52">
+      <div className="card bg-base-200 shadow-md p-2 max-w-64">
         <div className="flex gap-2 items-center">
           <img
             src={latest_song.track.album.images[0].url}
