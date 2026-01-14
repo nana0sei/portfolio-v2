@@ -12,7 +12,7 @@ const RecentlyPlayedCard = () => {
 
   return (
     <>
-      <div className="card bg-base-200 shadow-md p-2 w-64">
+      <div className="card bg-base-200 shadow-md p-2 w-60">
         <div className="flex gap-2 items-center">
           <img
             src={latest_song.track.album.images[0].url}
@@ -30,7 +30,7 @@ const RecentlyPlayedCard = () => {
             </Link>
 
             {latest_song.track.artists.map((a) => a.name).join(", ").length >
-            20 ? (
+            25 ? (
               <div className="marquee-wrapper">
                 <p className="text-sm marquee">
                   {latest_song.track.artists.map((a) => a.name).join(", ")}
