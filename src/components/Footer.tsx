@@ -1,4 +1,3 @@
-import { AiFillGithub } from "react-icons/ai";
 import { FaInstagram } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { Link } from "react-router-dom";
