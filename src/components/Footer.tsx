@@ -31,7 +31,6 @@ export default Footer;
 
 const links = [
   { href: "mailto:01nanaosei@gmail.com", icon: <IoIosMail size="30px" /> },
-  { href: "https://github.com/nana0sei/", icon: <AiFillGithub size="25px" /> },
   {
     href: "https://instagram.com/nana0sei/",
     icon: <FaInstagram size="25px" />,
