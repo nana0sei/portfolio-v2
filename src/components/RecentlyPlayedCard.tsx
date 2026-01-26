@@ -4,7 +4,7 @@ import useRecentlyPlayed from "../hooks/useRecentlyPlayed";
 const RecentlyPlayedCard = () => {
   const { data: tracks, isLoading, error } = useRecentlyPlayed();
 
-  if (isLoading) return <div className="skeleton w-[48px] h-[48px]" />;
+  if (isLoading) return <div className="skeleton w-[60px] h-[48px]" />;
 
   if (error) return null;
 
