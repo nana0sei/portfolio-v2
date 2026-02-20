@@ -1,5 +1,4 @@
 import portfolio from "../assets/portfolio.png";
-import fhq from "../assets/fhq.png";
 import loangrid from "../assets/loangrid.png";
 import lseza from "../assets/lseza.png";
 
