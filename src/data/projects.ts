@@ -25,16 +25,6 @@ const projects: Project[] = [
     git: "",
     tools: ["nextjs", "tailwind", "hero ui"],
   },
-
-  {
-    name: "faith hq",
-    description:
-      "a comprehensive church management solution built for modern religious institutions. designed to simplify administration and enhance community connection, faith hq empowers churches to operate efficiently, grow sustainably, and deepen their impact.",
-    image: fhq,
-    link: "https://www.logicielghana.com/platorms/platforms/fathhq",
-    git: "",
-    tools: ["nextjs", "tailwind"],
-  },
   {
     name: "portfolio",
     description: "here.",
